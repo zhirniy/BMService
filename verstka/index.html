@@ -1,0 +1,294 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to Test!</title>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+ul {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: absolute;
+	right: 20px;
+}
+ul li{
+	display: inline;
+	list-style-type: none;
+}
+ul li a {
+	text-decoration: none;
+	color:lightseagreen;
+}
+.wrapper {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+}
+.footer {
+  width: 160%;
+  height: 100px;
+  margin-top:30px;
+  background-color: lightgrey;
+  margin-left: -60%;
+}
+
+.header{
+	width: 100%;	
+ 	flex: 0 0 auto;
+ 	background-color: lightgrey;
+ 	height: 50px;
+ 	position: relative;
+ 	margin-bottom: 10px;
+}
+.left-menu{
+	width: 20%;
+	height: 100%;
+	position: relative;
+}
+.right-block{
+	width: 80%;
+	height: 100%;
+}
+.fixed-menu{
+	position: fixed;
+	width: 15%;
+	top:0px;
+}
+.banner{
+	width: 96%;
+	max-height: 100%;
+	border:2px solid grey;
+}
+.box{
+	width: 220px;
+	height: 180px;
+	
+}
+.product{
+	margin: 5%;
+	margin-left: 0%; 
+	width: 95%;
+	height: 95%;
+	border:2px solid grey;
+	position: relative;
+	z-index: 1;
+}
+.product:hover{
+	z-index: 2;
+	height: 150%;
+	opacity: 1;
+	background-color: white;
+}
+
+.right-block{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap:wrap;
+}
+
+#ul-header{
+	left: 20px;
+	right: auto;
+}
+#ul-left-menu{
+	display: block;
+	left: 20px;
+	right: auto;
+	top:60px;
+}
+#ul-left-menu li{
+	display: block;
+}
+
+#ul-header li div{
+	width: auto;
+	height: 50px;
+} 
+#ul-header li div:hover{
+	background-color: grey;
+} 
+
+#ul-header li div:hover a{
+	color: black;
+} 
+
+#ul-header li div a{
+	line-height: 3;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#first-link-header{
+	color:black;
+}
+
+#ul-left-menu li div{
+	width: 100px;
+	height: 20px;
+	border:solid 2px grey;
+}
+
+#ul-left-menu li div a{
+	padding-left: 10px;
+}
+
+#ul-left-menu li div:hover{
+	background-color: grey;
+} 
+
+#ul-left-menu li div:hover a{
+	color: black;
+}
+
+#ul-footer li div{
+	width: auto;
+	height: 100px;
+} 
+#ul-footer li div:hover{
+	background-color: grey;
+} 
+
+#ul-footer li div:hover a{
+	color: black;
+} 
+
+#ul-footer li div a{
+	line-height: 6;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+div.banner > div {
+ 	position:relative;
+ 	width:100%;
+ 	padding-bottom:20%;
+}
+div.top > div > div {
+ 	position:absolute;
+ 	width:100%;
+ 	height:100%;
+}
+@media screen and (max-width: 600px) {
+	.left-menu{
+		width: 30%;
+	}
+	.right-block{
+		width: 70%;
+	}
+	#ul-left-menu li div{
+		width: 70px;
+		height: 20px;
+		border:solid 2px grey;
+	}
+	#ul-left-menu li div a{
+		font-size: 10px;
+		padding-left: 5px;
+	}
+	#ul-header li div a{
+		font-size: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		line-height: 5;
+	}
+	#ul-footer li div a{
+		font-size: 10px;
+		padding-left: 5px;
+	}
+	#ul-footer li div a{
+		font-size: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		line-height: 10;
+	}
+}
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="content">
+  	<div class="header">
+  		<ul id="ul-header">
+  			<li><div><a id="first-link-header" href="#">Brand</a></div></li>
+			<li><div><a href="#">Home</a></div></li>
+			<li><div><a href="#">Profile</a></div></li>
+			<li><div><a href="#">Message</a></div></li>
+			<li><div><a href="#">Message</a></div></li>
+			<li><div><a href="#">Message</a></div></li>
+		</ul>
+ 	 </div>
+    <div class="left-menu">
+    	<div class = "fixed-menu">
+    	 <ul id="ul-left-menu">
+			<li>Home</li>
+			<li><div><a href="#">Profile</a></div></li>
+			<li><div><a href="#">Message</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+			<li><div><a href="#">Stack link</a></div></li>
+		</ul>
+		</div>
+    </div>
+    <div class="right-block">
+  	<div class="banner">
+  		<div>
+  				<div></div>
+  		</div>
+  	</div>
+
+   	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+
+   	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+
+   	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+  	<div class="box"><div class="product"></div></div>
+
+  	 <div class="footer">
+  		<ul id="ul-footer">
+			<li><div><a href="#">Brand</a></div></li>
+			<li><div><a href="#">Home</a></div></li>
+			<li><div><a href="#">Profile</a></div></li>
+			<li><div><a href="#">Message</a></div></li>
+		</ul>
+  	</div>
+  	</div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
