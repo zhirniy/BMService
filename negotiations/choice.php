@@ -25,8 +25,7 @@ function choice ($people, $projector, $board){
 		else{
 			return "Нет подходящих комнат";
 		}
-		return "Не больше 4-6";
-
+		
 	}else if( $people > 6 &&  $people <=8 ) {
 		if ($projector === $Aztec->projector && $board ===  $Aztec->board) {
 			return "Комната Aztec";
@@ -34,7 +33,6 @@ function choice ($people, $projector, $board){
 		else{
 			return "Нет подходящих комнат";
 		}
-		return "Не больше 6-8";
 	}else{
 		return "Нет подходящих комнат";
 	}
